@@ -38,7 +38,10 @@ public class Kafe19 {
                 break;
             case 'L':
                 totalHarga += 0.4 * totalHarga;
-                break;    
+                break;  
+            default:
+             System.out.println("Maaf ukuran cup tersebut tidak ada, maka cup akan di alihkan menjadi cup M  ");
+                break;
         }
         double diskon = keanggotaan ? 0.1 : 0;
         double nominalBayar = totalHarga - (diskon * totalHarga);
